@@ -1,0 +1,19 @@
+create table watch ( 
+PRODUCT_ID varchar(5) not null,
+BRAND varchar(10) not null, 
+COLOR varchar(10) not null,  
+SMART_WATCH varchar(15) not null, 
+GPS varchar(5) not null, 
+BLUETOOTH varchar(5) not null,
+WARRANTY_IN_YRS int not null,
+PRICE_IN_DOLLARS decimal(10,2) default 0.00, 
+PIECES_AVAILABLE int default 0,
+PRIMARY KEY(BRAND,PRODUCT_ID) );
+
+insert into watch values("W01", "Donerton", "black", "YES", "YES", "YES", 4, 8.74 , 8);
+insert into watch values("W02", "Bulgari" , "blue" , "YES", "YES", "YES", 5, 55.74, 11);
+insert into watch values("W03", "Hublot"  , "Gry"  , "YES", "YES", "NO" , 6, 55.74, 11);
+insert into watch values("W04", "Rolex"   , "multi", "YES", "YES", "YES", 7, 35.74, 15);
+insert into watch values("W05", "Bulgari" , "pink" , "YES", "YES", "YES", 3, 56.74, 17);
+insert into watch values("W06", "Omega"   , "white", "YES", "YES", "YES", 2, 56.74, 15);
+insert into watch values("W07", "Chopard" , "blue" , "YES", "YES", "YES", 5, 25.74, 16);

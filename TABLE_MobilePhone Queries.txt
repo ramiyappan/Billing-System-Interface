@@ -1,0 +1,27 @@
+create table mobile_phones ( 
+PRODUCT_ID varchar(5) not null,
+BRAND varchar(10) not null, 
+MODEL varchar(20) not null, 
+CAMERA varchar(50) not null, 
+MEMORY varchar(15) not null, 
+RAM varchar(10) not null, 
+PRODUCT_CONDITION varchar(5) not null, 
+PRICE_IN_DOLLARS decimal(10,2) default 0.00, 
+PIECES_AVAILABLE int default 0, 
+PRIMARY KEY(BRAND,PRODUCT_ID) );
+
+
+insert into mobile_phones values("MP01","Apple", "iPhone 12 mini", "Dual 12 MP", "256 GB" ,"4 GB", "NEW",  825.19, 7);
+insert into mobile_phones values("MP02", "Apple", "iPhone 12 mini", "Dual 12 MP", "64 GB" ,"4 GB", "NEW", 715.97, 10);
+insert into mobile_phones values("MP03", "Apple", "iPhone 12 mini", "Dual 12 MP", "64 GB" ,"4 GB", "USED", 499, 5);
+insert into mobile_phones values("MP04","Apple", "iPhone 12", "Dual 12 MP", "128 GB" ,"4 GB", "NEW",  879, 11);
+insert into mobile_phones values("MP05","Apple", "iPhone 12", "Dual 12 MP", "128 GB" ,"4 GB", "USED",  599, 15);
+insert into mobile_phones values("MP06", "Apple", "iPhone 12 Pro", "Pro 12 MP", "128 GB" ,"6 GB", "USED", 730, 9);
+insert into mobile_phones values("MP07","Apple", "iPhone 13", "Dual 12 MP", "128 GB" ,"4 GB", "NEW",  829, 10);
+insert into mobile_phones values("MP08","Apple", "iPhone 13", "Dual 12 MP", "128 GB" ,"4 GB", "USED",  449, 4);
+insert into mobile_phones values("MP09", "Apple", "iPhone 13", "Dual 12 MP", "256 GB" ,"4 GB", "NEW", 929, 7);
+insert into mobile_phones values("MP10","Apple", "iPhone 13 Pro Max", "Triple 12 MP", "256 GB" ,"6 GB", "NEW",  1199, 14);
+insert into mobile_phones values("MP11", "OnePlus", "8", "QUAD 48MP", "128 GB", "8 GB", "USED", 299.99, 6);
+insert into mobile_phones values("MP12", "OnePlus", "9", "QUAD 48MP", "128 GB", "8 GB", "NEW", 729.99, 8);
+insert into mobile_phones values("MP13", "OnePlus", "9 Pro","QUAD 48MP", "256 GB", "12 GB", "NEW", 1069.99, 12);
+

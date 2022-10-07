@@ -1,0 +1,28 @@
+CREATE TABLE laptop ( 
+PRODUCT_ID varchar(5) not null,
+BRAND varchar(10) not null, 
+MODEL varchar(25) not null, 
+OPERATING_SYSTEM varchar(15) not null, 
+MEMORY varchar(15) not null, 
+RAM varchar(5) not null, 
+PRODUCT_CONDITION varchar(5) not null, 
+PRICE_IN_DOLLARS decimal(10,2) default 0.00, 
+PIECES_AVAILABLE int default 0, 
+PRIMARY KEY(BRAND,PRODUCT_ID) );
+
+
+insert into laptop values("LP01","Apple", "MacBook Air", "Mac OS", "1 TB", "8 GB", "NEW",  999, 10);
+insert into laptop values("LP02","Apple", "MacBook Pro 13", "Mac OS", "2 TB", "16 GB", "NEW",  1299, 15);
+insert into laptop values("LP03","Apple", "MacBook Pro 14", "Mac OS", "512 GB", "8 GB", "USED",  899, 5);
+insert into laptop values("LP04","Apple", "MacBook Pro 14", "Mac OS", "1 TB", "16 GB", "USED",  1399, 3);
+insert into laptop values("LP05","Apple", "MacBook Pro 16", "Mac OS", "1 TB", "16 GB", "NEW", 2499, 6);
+insert into laptop values("LP06","Apple", "MacBook Pro 16", "Mac OS", "1 TB", "32 GB", "NEW",  2999, 7);
+insert into laptop values("LP07","HP", "15", "Windows", "1 TB", "16 GB", "USED",  799, 4);
+insert into laptop values("LP08","HP", "15", "Windows", "512 GB", "12 GB", "USED",  619, 3);
+insert into laptop values("LP09","HP", "15", "Windows", "2 TB", "32 GB", "NEW",  1089, 3);
+insert into laptop values("LP10", "HP", "Pavilion", "Windows", "256 GB", "8 GB", "USED", 399, 4);
+insert into laptop values("LP11", "HP", "Pavilion", "Windows", "1 TB", "16 GB", "NEW", 649, 5);
+insert into laptop values("LP12","DELL", "Inspiron 15", "Windows", "256 GB", "8 GB", "NEW",  499.99, 8);
+
+
+

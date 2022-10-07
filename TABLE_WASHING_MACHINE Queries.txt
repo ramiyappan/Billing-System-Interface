@@ -1,0 +1,24 @@
+create table washing_machine ( 
+PRODUCT_ID varchar(5) not null,
+BRAND varchar(10) not null, 
+ACCESS_LOCATION varchar(25) not null, 
+COLOR varchar(25) not null, 
+CAPACITY varchar(25) not null, 
+MAX_SPIN_SPEED int not null, 
+PRICE_IN_DOLLARS decimal(10,2) default 0.00, 
+PIECES_AVAILABLE int default 0, 
+PRIMARY KEY(BRAND,PRODUCT_ID));
+
+
+insert into washing_machine values("W01","Comfee",  "Top Load", "Grey", "0.9 Cubic Feet",  840,269.99,10);
+insert into washing_machine values("W02","KoolMore",  "Front Load", "White", "0.9 Cubic Feet", 1200, 1288.16, 15);
+insert into washing_machine values("W03","LG", "Front Load", "Black", "4.5 Cubic Feet", 1000, 1199, 5);
+insert into washing_machine values("W04","Giantex",  "Top Load", "White", "5.5 Cubic Feet",  1000, 1844, 3);
+insert into washing_machine values("W05", "Helohome", "Top Load", "Grey", "1.6 Cubic Feet",  900, 484, 6);
+insert into washing_machine values("W06","Costway",  "Front Load", "Black", "4.0 Cubic Feet",1000, 844, 7);
+insert into washing_machine values("W07","IFB",  "Front Load", "Grey", "4.5 Cubic Feet",  800, 987, 4);
+insert into washing_machine values("W08", "Vivohome", "Top Load","White", "5.5 Cubic Feet",  1000, 1008, 3);
+insert into washing_machine values("W09","Goodrej",  "Top Load","Grey", "0.9 Cubic Feet", 800, 844, 3);
+insert into washing_machine values("W10","Whirlpool",  "Front Load","Black","2.5 Cubic Feet",  800, 844, 4);
+insert into washing_machine values("W11", "Samsung", "Front Load", "White","1.6 Cubic Feet", 800, 844, 5);
+insert into washing_machine values("W12", "Bajaj", "Top Load","Grey", "5.5 Cubic Feet", 800, 844, 8);

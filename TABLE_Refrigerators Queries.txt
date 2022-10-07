@@ -1,0 +1,25 @@
+create table refrigerators(
+PRODUCT_ID varchar(10) not null,
+BRAND varchar(25) not null,
+CAPACITY_CUFT decimal(10,2) not null,
+NUMBER_OF_DOORS int not null,
+COLOR varchar(15) not null,
+PRICE_IN_DOLLARS decimal(10,2) default 0.00,
+PIECES_AVAILABLE int default 0,
+Primary Key (PRODUCT_ID,BRAND));
+
+
+
+insert into refrigerators values ('RF01', 'Kenmore' , 20.84, 2, 'BLACK', 879.99,5);
+
+insert into refrigerators values ('RF02', 'Winia', 18.8,2,'BLACK', 855.42,5);
+
+insert into refrigerators values ('RF03', 'Frigidaire',17.4, 4, 'GREY' , 1523.10,6);
+
+insert into refrigerators values ('RF04', 'Galanz',10, 2,'WHITE', 453.00 ,8);
+
+insert into refrigerators values ('RF05', 'Leuwd' , 3.3,1, 'BLACK', 259.99 ,7);
+
+insert into refrigerators values ('RF06','Thor Kitchen', 15.16, 2,'Grey' ,2499.00,12);
+
+insert into refrigerators values ('RF07','NewAir',3.4,1,'Grey',428.83,4);

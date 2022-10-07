@@ -1,0 +1,26 @@
+create table camera
+(
+PRODUCT_ID varchar(10) not null,
+BRAND varchar(10) not null,
+MODEL varchar(50) not null,
+PIXEL varchar(10) not null,
+MEMORY varchar(10) not null,
+PRICE_IN_DOLLARS decimal(10,2) default 0.00,
+PIECES_AVAILABLE int default 0,
+Primary Key (PRODUCT_ID,BRAND));
+
+
+
+insert into camera values ('C01', 'Canon', 'Zoom Digital', '12 MP', '16 GB',279,10);
+
+insert into camera values ('C02','Nikon','FX-Format','45 MP',  '16 GB',2743,15);
+
+insert into camera values ('C03', 'Sony','DSC-W800','20 MP', '16 GB',199, 3);
+
+insert into camera values ('C04','Fujifilm' ,'Instax 11', '20 MP', '16 GB',132,6);
+
+insert into camera values ('C05','Panasonic','LUMIX GH6', '25 MP', '32 GB',2199,2);
+
+insert into camera values ('C06','Kodak','PIXPRO Astro', '16 MP','12 GB',174 ,4);
+
+insert into camera values ('C07','Pentak','K-3 Mark III', '20 MP','8 GB',1739.60,4);

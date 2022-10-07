@@ -1,0 +1,26 @@
+create table speaker
+(PRODUCT_ID varchar(10) not null,
+BRAND varchar(25) not null,
+MODEL varchar(50) not null,
+BATTERY_LIFE varchar(10) not null,
+COLOR varchar(25) not null,
+WATER_RESISTANT varchar(10) not null,
+PRICE_IN_DOLLARS decimal(10,2) default 0.00,
+PIECES_AVAILABLE int default 0,
+Primary Key (PRODUCT_ID,BRAND));
+
+
+
+insert into speaker values ('SP01','JBL', 'JBL CLIP 4','10hrs','GREY' ,'YES', 49.95, 12);
+
+insert into speaker values ('SP02','MIATONE', 'MIATONE XP ','10hrs','BLACK','YES', 39.59, 9);
+
+insert into speaker values ('SP03','HB', 'HB - XD101','3hrs' ,'BLUE' ,'YES', 36.99, 6);
+
+insert into speaker values ('SP04','MusiBaby', 'M68','25hrs','BLACK','YES', 31.69, 10);
+
+insert into speaker values ('SP05','Bose', 'Bose SoundLink' ,'12hrs','BLUE' ,'YES', 49.00, 3);
+
+insert into speaker values ('SP06','Anker', 'A3102','24hrs','Red','YES', 35.99, 4);
+
+insert into speaker values ('SP07','C Soundworks', 'Angle 3','14hrs','WHITE', 'NO', 27.99, 5);
